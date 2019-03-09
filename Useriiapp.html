@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 5px;
+  background:url(wallpaper.jpg);
+}
+
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.butonreg {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+.butonreg:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Inregistrati-va pe pagina pentru a putea crea articole</h1>
+    <p>Va rugam sa completati fiecare camp de pe pagina.</p>
+    <hr>
+
+    <center><label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Introduceti e-mail" name="email" required><br></center>
+
+    <center><label for="psw"><b>Parola</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br></center>
+
+    <center><label for="psw-repeat"><b>Repetati parola</b></label><br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required></center>
+    <hr>
+    <p>Creand aceasta pagina sunteti de acord cu: <a href="#">Termenii & Conditiile</a>.</p>
+
+    <center><button type="submit" class="butonreg">Inregistrare</button></center>
+  </div>
+  
+  <div class="container signin">
+    <p>Deja aveti cont? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>

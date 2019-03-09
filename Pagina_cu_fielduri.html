@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang = "ro">
+  <head>
+    <title><center><strong style="color:midnightblue">Pagina articole</strong></center></title>
+     <link rel="stylesheet" href="style.css">
+    <meta charset = "UTF-8" />
+    <style>
+        h1{
+            color:indigo
+            font-family: "Times New Roman",sans-serif;
+        }
+        h3{
+            color:#660000
+            font-family:  Tahoma, Helvetica, sans-serif;;
+        }
+        h2{
+          color: purple
+          font-family: Arial,serif;
+        }
+        #bg{
+            border: 3px solid black;
+            padding:25 px;
+             background:url( wallpaper.jpg);
+             background-position: center;
+             background-repeat: no-repeat;
+            background-size: auto;}
+        #bc{
+            padding:5 px;
+             background:url( wallpaper2.jpg);
+             background-position: center;
+             background-repeat: no-repeat;
+            background-size: auto;
+            height: 100%;
+            }
+        input[type=text], input[type=password] {
+            width: 40%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            }
+        }
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+            }
+        .txt{
+            font-family:Arial, Helvetica, sans-serif;
+            }
+        .submitbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 15%;
+          opacity: 0.9;
+            }
+
+    </style>
+  </head>
+  <body>
+    <div id="bc">
+    <h1><center>Pagina articole</center></h1>
+    <div>
+   <p> 
+     <a href="file:///D:/Facultate/ASII/Task%201%20-sem2/Pagina_cu_fielduri.html?text=++++++++++++++++++Introduceti+Numele%0D%0A++++++++++++++&text=++++++++++++++++Introduceti+Titlul%0D%0A++++++++++++&text=+%0D%0A+++++++++++++++++Introduceti+aici+textul+articolului+dumneavostra.%0D%0A+++++++++++++++&actualday=" target="new_blank"><h2 align="left">Pagina articolului</h2></a> 
+     <a href="file:///D:/Facultate/ASII/Task%201%20-sem2/Useriiapp.html" target="new_blank"><h2 align="center">Userii aplicatiei</h2></a>
+     <h2 align="right">Articole create</h2>
+    </p>
+    </div>
+    <div id="bg">
+    <form>
+        <p>
+          <label><h3><center>Numele scriitorului</center></h3></label>
+          <center>
+              <form>
+                  <input type="text" name="Numele" placeholder="Introduceti numele" required>
+                </form>
+          </center>
+        </p>
+        <p>
+          <label><h3><center>Titlul articolului</center></h3></label>
+          <center>
+                <form>
+                    <input type="text" name="Titlul" placeholder="Introduceti titlul"  required>
+                </form>
+        </center>
+        </p>
+        <p>
+            <label><center><h3>Date de contact:</h3></center></label>
+            <center> 
+               <p class="txt"> Telefon:</p><input type="text" name="Telefon" placeholder="Introduceti telefon"><br>
+               <p class="txt">  E-mail:</p><input type="text" name="Email"placeholder="Introduceti e-mail"><br>
+               <p class="txt"> Adresa:</p><input type="text" name="AdresaFizica" placeholder="Introduceti adresa">
+              </center>
+          <label><center><h3>Cuprinsul articolului:</h3></center></label>
+          <center>
+              <textarea style="background-color: wheat;"
+                 name="text" 
+                 cols="100 " 
+                 rows="15"> 
+                 Introduceti aici textul articolului dumneavoastra.
+               </textarea>
+            </center>
+            <br>
+            <center><form action="/action_page.php">
+                <h3 style="color:maroon">Trimiteti articolul:</h3> 
+                <input type="date" name="actualday">
+                <input class="submitbtn" type="submit">
+              </form></center>
+        </p>
+    </form>
+    </div>
+    </div>
+    <div id="bc"><p></p></div>
+  </body>
+</html>
